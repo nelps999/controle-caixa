@@ -1,6 +1,6 @@
 :root {
-    --azul-celeste: #AEFEFF;
-    --branco      : #FDFDFD;
+    --verde       : #24ad59;
+    --branco      : #e8eaf3fa;
     --cinza       : #CCC;
     --error       : #d11507;
     --preto       : #090910;
@@ -8,6 +8,6 @@
     --verde       : #35858B;
     --verde-claro : #4FBDBA;
     --verde-escuro: #072227;
-    --verde-vivo  : #5FD068;
+    --verde-vivo  : #12941d;
     --vermelho    : #D61C4E;
 }

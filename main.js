@@ -64,7 +64,11 @@ const saveClient = () => {
             nome: document.getElementById('nome').value,
             email: document.getElementById('email').value,
             celular: document.getElementById('celular').value,
-            cidade: document.getElementById('cidade').value
+            cidade: document.getElementById('cidade').value,
+            cidade: document.getElementById('valor').value,
+            cidade: document.getElementById('data').value,
+            cidade: document.getElementById('data-pagamento').value,
+
         }
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {
@@ -87,6 +91,9 @@ const createRow = (client, index) => {
         <td>${client.email}</td>
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
+        <td>${client.valor}</td>
+        <td>${client.data}</td>
+        <td>${client.data-pagamento}</td>
         <td>
             <button type="button" class="button green" id="edit-${index}">Editar</button>
             <button type="button" class="button red" id="delete-${index}" >Excluir</button>
@@ -115,6 +122,9 @@ const fillFields = (client) => {
     document.getElementById('celular').value = client.celular
     document.getElementById('cidade').value = client.cidade
     document.getElementById('nome').dataset.index = client.index
+    document.getElementById('data').value = client.data
+    document.getElementById('valor').value = client.valor
+    document.getElementById('data-pagamento').value = client.data-pagamento
 }
 
 //editar cliente
