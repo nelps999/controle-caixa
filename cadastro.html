@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <body>
         <header class="header-clientes">
             <a href="home.html" class="btn-voltar">
@@ -35,16 +36,15 @@
                     <th>E-mail</th>
                     <th>Celular</th>
                     <th>Cidade</th>
-                    <th>Ação</th>
-                    <th>valor</th>
-                    <th>data</th>
-                    <th>data pagamento</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th>Data pagamento</th>
                 </tr>
             </thead>
             <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+            <script>
+                lucide.createIcons();
+            </script>
             <tbody>
 
             </tbody>
@@ -59,7 +59,7 @@
                     <div class="form-block">
                         <label for="nome" class="modal-label">Nome:</label>
                         <input type="text" id="nome" name="name" data-index="new" class="modal-field"
-                            placeholder="Ex.: Jéssica de Oliveira" required>
+                            placeholder="Ex.: Seu Nome" required>
                         <span role="alert" id="nameError" aria-hidden="true">
                             O campo nome deve ser preenchido.
                         </span>
@@ -75,19 +75,30 @@
                     <div class="form-block">
                         <label for="celular" class="modal-label">Celular:</label>
                         <input type="tel" id="celular" name="cel" class="modal-field" maxlength="15"
-                        placeholder="(48) 98877-6655" onkeyup="handleCell(event)" required>
+                            placeholder="(00) 00000-0000" onkeyup="handleCell(event)" required>
                         <span role="alert" id="cellError" aria-hidden="true">
                             O campo celular deve ser preenchido.
                         </span>
                     </div>
                     <div class="form-block">
                         <label for="cidade" class="modal-label">Cidade:</label>
-                        <input type="text" id="cidade" name="city" class="modal-field" placeholder="Ex.: Orleans"
+                        <input type="text" id="cidade" name="city" class="modal-field" placeholder="Ex.: Sua cidade"
                             required>
                         <span role="alert" id="cityError" aria-hidden="true">
                             O campo cidade deve ser preenchido.
                         </span>
                     </div>
+                    <div class="form-block">
+                        <label for="data" class="modal-label">Data:</label>
+                        <input type="date" id="data" name="data" class="modal-field" placeholder="Ex.: 21/02/2002"
+                            required>
+                        <span role="alert" id="dataError" aria-hidden="true">
+                            O campo data deve ser preenchido.
+                        </span>
+                    </div>
+                    <input type="text" id="valor" name="valor" class="modal-field" placeholder="Ex.: R$ 0,00" required>
+
+
                 </form>
                 <footer class="modal-footer">
                     <button id="salvar" class="button green">Salvar</button>
