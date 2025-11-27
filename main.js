@@ -54,6 +54,9 @@ const saveClient = () => {
       email: document.getElementById('email').value,
       celular: document.getElementById('celular').value,
       cidade: document.getElementById('cidade').value,
+      data: document.getElementById('data').value,
+      valor: document.getElementById('valor').value,
+      datapagamento: document.getElementById('data-pagamento').value,
 
       // 💰 remove R$, pontos e vírgulas antes de salvar
       valor: parseFloat(

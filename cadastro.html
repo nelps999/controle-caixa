@@ -49,29 +49,29 @@
 
             </tbody>
         </table>
-        <div class="modal" id="modal">
+        <!-- ===== Modal de Cadastro ===== -->
+        <div id="modal" class="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
+                    <h2>Cadastrar Cliente</h2>
+                    <span id="modalClose" class="modal-close">&times;</span>
                 </header>
+
                 <form id="form" class="modal-form">
                     <div class="form-block">
                         <label for="nome" class="modal-label">Nome:</label>
-                        <input type="text" id="nome" name="name" data-index="new" class="modal-field"
-                            placeholder="Ex.: Seu Nome" required>
-                        <span role="alert" id="nameError" aria-hidden="true">
-                            O campo nome deve ser preenchido.
-                        </span>
+                        <input type="text" id="nome" name="nome" class="modal-field" placeholder="Ex.: João da Silva"
+                            required>
+                        <span role="alert" id="nomeError" aria-hidden="true">O campo nome deve ser preenchido.</span>
                     </div>
+
                     <div class="form-block">
                         <label for="email" class="modal-label">Email:</label>
                         <input type="email" id="email" name="email" class="modal-field"
-                            placeholder="example@example.com" required>
-                        <span role="alert" id="emailError" aria-hidden="true">
-                            O campo email deve ser preenchido.
-                        </span>
+                            placeholder="Ex.: joao@email.com" required>
+                        <span role="alert" id="emailError" aria-hidden="true">O campo email deve ser preenchido.</span>
                     </div>
+
                     <div class="form-block">
                         <label for="celular" class="modal-label">Celular:</label>
                         <input type="tel" id="celular" name="cel" class="modal-field" maxlength="15"
@@ -80,36 +80,45 @@
                             O campo celular deve ser preenchido.
                         </span>
                     </div>
+
                     <div class="form-block">
                         <label for="cidade" class="modal-label">Cidade:</label>
-                        <input type="text" id="cidade" name="city" class="modal-field" placeholder="Ex.: Sua cidade"
+                        <input type="text" id="cidade" name="cidade" class="modal-field" placeholder="Ex.: São Paulo"
                             required>
-                        <span role="alert" id="cityError" aria-hidden="true">
-                            O campo cidade deve ser preenchido.
-                        </span>
+                        <span role="alert" id="cidadeError" aria-hidden="true">O campo cidade deve ser
+                            preenchido.</span>
                     </div>
+
+                    <div class="form-block">
+                        <label for="valor" class="modal-label">Valor (R$):</label>
+                        <input type="text" id="valor" name="valor" class="modal-field" placeholder="Ex.: R$ 0,00"
+                            required>
+                        <span role="alert" id="valorError" aria-hidden="true">O campo valor deve ser preenchido.</span>
+                    </div>
+
                     <div class="form-block">
                         <label for="data" class="modal-label">Data:</label>
-                        <input type="date" id="data" name="data" class="modal-field" placeholder="Ex.: 21/02/2002"
-                            required>
-                        <span role="alert" id="dataError" aria-hidden="true">
-                            O campo data deve ser preenchido.
+                        <input type="date" id="data" name="data" class="modal-field" required>
+                        <span role="alert" id="dataError" aria-hidden="true">O campo data deve ser preenchido.</span>
+                    </div>
+
+                    <!-- 🆕 Campo adicionado -->
+                    <div class="form-block">
+                        <label for="data-pagamento" class="modal-label">Data de Pagamento:</label>
+                        <input type="date" id="data-pagamento" name="data-pagamento" class="modal-field" required>
+                        <span role="alert" id="datapgError" aria-hidden="true">
+                            O campo data de pagamento deve ser preenchido.
                         </span>
                     </div>
-                    <input type="text" id="valor" name="valor" class="modal-field" placeholder="Ex.: R$ 0,00" required>
 
-
+                    <footer class="modal-footer">
+                        <button type="button" id="salvar" class="button green">Salvar</button>
+                        <button type="button" id="cancelar" class="button red">Cancelar</button>
+                    </footer>
                 </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
             </div>
         </div>
     </main>
-    <footer>
-        Copyright &copy; Jéssica.
-    </footer>
     <script src="main.js" defer></script>
     <script src="validate.js" defer></script>
 </body>
