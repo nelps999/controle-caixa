@@ -60,6 +60,13 @@ nav a:hover, nav a.active {
   color: #2a7d8c;
 }
 
+.card i {
+  width: 40px;
+  height: 40px;
+  color: #2a7d8c;
+  margin-bottom: 10px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -68,6 +75,7 @@ nav a:hover, nav a.active {
   color: white;
   border-radius: 6px;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
