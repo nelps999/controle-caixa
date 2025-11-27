@@ -65,9 +65,9 @@ const saveClient = () => {
             email: document.getElementById('email').value,
             celular: document.getElementById('celular').value,
             cidade: document.getElementById('cidade').value,
-            cidade: document.getElementById('valor').value,
-            cidade: document.getElementById('data').value,
-            cidade: document.getElementById('data-pagamento').value,
+            valor: document.getElementById('valor').value,
+            data: document.getElementById('data').value,
+            datapg: document.getElementById('data-pagamento').value,
 
         }
         const index = document.getElementById('nome').dataset.index

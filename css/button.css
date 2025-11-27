@@ -11,6 +11,52 @@
     transition      : box-shadow .6s ease;
 }
 
+.header-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o título */
+  background-color: #2a7d8c;
+  color: white;
+  padding: 12px 20px;
+  position: relative; /* permite posicionar o botão dentro */
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* botão pequeno e discreto no canto esquerdo */
+.btn-voltar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: rgba(99, 230, 164, 0.15);
+}
+
+.btn-voltar i {
+  width: 20px;
+  height: 20px;
+}
+
+
 .button.blue {
     background-color: var(--verde-claro);
 }

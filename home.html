@@ -8,36 +8,28 @@
 </head>
 <body>
   <header class="header">
+    <h1>Bem-vindo <i data-lucide="Wallpaper"></i> </h1>
     <h1>Sistema de Cadastro de Clientes</h1>
-    <nav>
-      <a href="home.html" class="active">Home</a>
-      <a href="index.html">Cadastrar Clientes</a>
-    </nav>
   </header>
 
   <main class="content">
     <section class="intro">
-      <h2>Bem-vindo 👋</h2>
       <p>Este sistema permite cadastrar, consultar e gerenciar os clientes de forma simples e rápida.</p>
     </section>
 
     <section class="cards">
       <div class="card">
-        <h3>📋 Cadastrar Cliente</h3>
-        <p>Adicione novos clientes ao sistema com facilidade.</p>
+        <i data-lucide="user-plus"></i>
+        <h3>Cadastrar Cliente</h3>
+        <p><strong>Adicione novos clientes ao sistema.</strong></p>
         <a href="index.html" class="btn">Ir para Cadastro</a>
       </div>
 
       <div class="card">
-        <h3>📊 Relatórios</h3>
-        <p>Visualize relatórios de clientes e pagamentos no Power BI.</p>
+        <i data-lucide="bar-chart-3"></i>
+        <h3>Relatórios</h3>
+        <p><strong>Visualize relatórios de pagamentos.</strong></p>
         <a href="#" class="btn">Ver Relatórios</a>
-      </div>
-
-      <div class="card">
-        <h3>⚙️ Configurações</h3>
-        <p>Personalize o sistema e suas preferências.</p>
-        <a href="#" class="btn">Configurar</a>
       </div>
     </section>
   </main>
@@ -45,5 +37,10 @@
   <footer>
     <p>© 2025 - Sistema de Cadastro de Clientes</p>
   </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
